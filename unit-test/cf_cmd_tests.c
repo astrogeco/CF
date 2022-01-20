@@ -4799,7 +4799,7 @@ void Test_CF_ProcessGroundCommand_Receives_cmd_AndLengthDoesNotMatchExpectedForT
     CFE_MSG_FcnCode_t forced_return_CFE_MSG_GetFcnCode = 0x00; /* 0x00 forces fns[0] which is CF_CmdNoop */
     CFE_MSG_Size_t    forced_return_CFE_MSG_GetSize    = Any_uint16_Except(
               sizeof(CF_NoArgsCmd_t)); /* sizeof(CF_NoArgsCmd_t) is expected size of CF_CmdNoop, using uint16 as a
-                                           reasonable size constraint here as size_t is at least 16 bit */
+                                                             reasonable size constraint here as size_t is at least 16 bit */
     const char *expected_Spec = "CF: invalid ground command length for command 0x%02x, expected %d got %zd";
     CFE_MSG_GetFcnCode_context_t context_CFE_MSG_GetFcnCode;
     CFE_MSG_GetSize_context_t    context_CFE_MSG_GetSize;
