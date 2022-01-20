@@ -8,4 +8,4 @@ on:
 jobs:
   format-check:
     name: Check Format
-    uses: nasa/cFS/.github/workflows/format-check.yml@main
+    uses: astrogeco/cFS/.github/workflows/format-check.yml@update-clang-format
